@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- FONTS -->
+        <link rel="stylesheet" href="https://use.typekit.net/pqy4cih.css" />
+        <!-- FONT ICONS -->
+        <script src="https://kit.fontawesome.com/db349aca81.js" crossorigin="anonymous"></script>
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Chester Friends</title>
+    </head>
+    <body>
+        
+        <header>
+            <nav>
+                <section class="faNav">
+
+                    <i class="fa-solid fa-bars modalOpenBtn"></i>
+                </section>
+                <section class="navLeft">
+                    <h2>Chester Friends</h2>
+                </section>
+                <section class="navRight">
+                        <a href="#work" class="navLink">Work</a>
+                        <a href="#about" class="navLink">About</a>
+                        <a href="#emailSpot" class="navLink">Contact</a>
+                </section>
+            </nav>
+            <!-- Modal -->
+                <section class="modal">
+                    <section class="modalContainer">
+                        <p class="modalCloseBtn">&times;</p>
+                        <section class="modalNav">
+                            <a href="#work" class="navLink" id="workBtn">Work</a>
+                            <a href="#about" class="navLink" id="aboutBtn">About</a>
+                            <a href="#enterEmail" class="navLink" id="contactBtn">Contact</a>
+                    </section>
+                    </section>
+                </section>
+            <!-- End Modal -->
+        </header>
+
+        <main>
+            <section id="work">
+                <h1>Work</h1>
+                <section id="workNav">
+                    <ul>
+                        <li class="workLinks workNavAll">All</li>
+                        <li class="workLinks workNavBranding">Branding</li>
+                        <li class="workLinks workNavWebDesign">Web Design</li>
+                        <li class="workLinks workNavPrint">Print</li>
+                    </ul>
+                </section>
+                <section class="workImages">
+                    <img src="./assets/candle.png" alt="image" class="allImg branding">
+                    <img src="./assets/heart.png" alt="image" class="allImg webDesign">
+                    <img src="./assets/moon.png" alt="image" class="allImg print">
+                    <img src="./assets/heart.png" alt="image" class="allImg webDesign">
+                    <img src="./assets/moon.png" alt="image" class="allImg print">
+                    <img src="./assets/candle.png" alt="image" class="allImg branding">
+                    <img src="./assets/candle.png" alt="image" class="allImg branding">
+                    <img src="./assets/moon.png" alt="image" class="allImg print">
+                    <img src="./assets/heart.png" alt="image" class="allImg webDesign" id="emailSpot">
+                </section>
+                <section id="getInTouch">
+                    <h3>Get In Touch</h3>
+                    <section id="enterEmail">
+                        <input type="text" id="emailInput" placeholder="enter email">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </section>
+                </section>
+                <section id="about">
+                    <section class="aboutLeft">
+
+                        <section id="text">
+                            <h4>About</h4>
+                            <p>Chester Friends is a graphic designer currently living in Austin, Texas. She specializes in branding, web design, and animation. When she’s not obsessing over type and character walk cycles, she’s seeking out the next horror movie to give her nightmares.</p> 
+                            <p>She lives with her nine foot tall partner Matthew, three ungrateful cats, and a ghoulish dog who is trying her hardest to put her into an early grave. If she were to choose anyone to portray her in a movie, it would be Brendan Gleeson, without a doubt. They have the same ears, and the likeness cannot be denied.
+                            </p>
+                        </section>
+                        <section id="tallPic" class="aboutImage">
+                            
+                        </section>  
+                    </section>
+                    <section class="aboutRight">
+                        <section id="chels" class="aboutImage">
+                        </section>
+                        <section id="longPic" class="aboutImage">
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Chester Friends 2022</p>
+            <p class="toTop"><a href="#top"><i class="fa-solid fa-square-caret-up"></i></a></p>
+        </footer>
+
+    <!-- JS Files -->
+    <script src="./js/main.js"></script>
+
+    </body>
+</html>

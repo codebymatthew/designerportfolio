@@ -1,0 +1,379 @@
+/* SETUP */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* FONTS */
+
+/* ESKAPADE */
+h1, .navLeft, #getInTouch h3, #text h4, footer p {
+    font-family: eskapade-fraktur, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* MR EAVES MODERN */
+.navLink {
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Mr Eaves Mod OT Book */
+#text p {
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/* Mr Eaves Mod OT Reg */
+.workLinks {
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* BASE STYLES */
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    background: url('../assets/header.png') center no-repeat;
+    background-size: cover;
+    height: 75rem;
+}
+.navLeft {
+    color: white;
+    font-size: 4.2rem;
+    margin-left: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navRight, .navLeft {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.navRight{
+    margin-right: 5rem;
+}
+.navLink {
+    text-decoration: none;
+    color: white;
+    font-size: 2.4rem;
+    margin-right: 5rem;
+}
+
+/* MAIN */
+
+#work {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+h1 {
+    color: #EF4511;
+    font-size: 5.4rem;
+    width: 100%;
+}
+#workNav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+#workNav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.workLinks {
+    text-decoration: none;
+    color: black;
+    font-size: 2.4rem;
+    margin: 0 2rem;
+    list-style-type: none;
+}
+.workLinks:hover {
+    cursor: pointer;
+}
+.workImages {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.allImg{
+    border-radius: 5%;
+    margin-bottom: 5rem;
+    box-shadow: 0 1rem 3.5rem 0 #000;
+}
+.allImg:hover {
+    transform: scale(1.5,1.5);
+    transition-duration: 1s;
+    box-shadow: none;
+}
+
+#getInTouch {
+    width: 100%;
+    height: 25rem;
+    background: url('../assets/getintouch.png') center no-repeat;
+    background-size: cover;
+    color: white;
+    margin: 5% 0;
+} 
+
+#emailInput {
+    text-align: center;
+    background: transparent;
+    border: none;
+    height: 3rem;
+    outline: none;
+    color: white;
+    outline: 2px solid white;
+    line-height: 3rem;
+    font-size: 2rem;
+    margin-right: 1rem;
+    
+}
+#emailInput::placeholder {
+    color: white;
+}
+#getInTouch h3 {
+    font-size: 5.4rem;
+    line-height: 5.4rem;
+}
+.fa-paper-plane{
+    font-size: 2rem;
+}
+#about {
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 50%;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.aboutRight {
+    width: 46%;
+}
+.aboutLeft {
+    flex-basis: 45%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutImage {
+    width: 4.5rem;
+    height: 100%;
+    margin: 3% 2%;
+}
+#chels {
+    background: url('../assets/aboutme.png') center no-repeat;
+    background-size: cover;
+    height: 60.8rem;
+    width: 100%;
+}
+#text {
+    width: 100%;
+    text-align: left;
+}
+#text h4 {
+    color: #EF4511;
+    font-size: 5.4rem;
+    margin: auto;
+}
+#text p {
+    font-size: 1.8rem;
+}
+#tallPic {
+    background: url('../assets/aboutme-wave.png') center no-repeat;
+    background-size: cover;
+    height: 36.5rem;
+    width: 100%;
+    align-self: flex-end;
+}
+#longPic {
+    background: url('../assets/aboutme-bottom.png') center no-repeat;
+    height: 25rem;
+    width: 100%;
+}
+
+
+footer {
+    height: 15rem;
+    width: 100%;
+    background: #1E1E1E;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer p {
+    color: white;
+    font-size: 2rem;
+}
+
+.faNav{
+    width: 100%;
+    display: block;
+    font-size: 3rem;
+    color: #fff;
+    text-align: right;
+    padding-right: 1rem;
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    visibility: hidden;
+    transform: scale(1.1);
+    opacity: 0;
+    transition: visibility 0s, linear .25s, opacity .25s 0s, transform .25s;
+}
+.modalContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    transform: translate(-50%, -50%);
+    background: #3f3f3f;
+    padding: 1rem;
+    top: 50%;
+    left: 50%;
+}
+.showModal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s, linear 0s, opacity .25s 0s, transform .25s;
+}
+.toTop {
+    width: 100%;
+    align-self: flex-end;
+    text-align: center;
+}
+.toTop a {
+    color: #fff;
+}
+/* ========================
+        Media Queries 
+========================== */
+
+@media screen and (max-width: 1175px) {
+    .workImages {
+        width: 70%;
+    }
+    .allImg:hover {
+        transform: scale(1);
+    }
+}
+@media screen and (max-width: 1000px) {
+    .allImg {
+        width: 25rem;
+        height: auto;
+    }
+    .workImages {
+        width: 70%;
+    }
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navRight {
+        margin: 0;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navLink {
+        margin: 0;
+    }
+    .navLeft {
+        margin: 0;
+    }
+    #about {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .allImg {
+        width: initial;
+        width: 30rem;
+        box-shadow: none;
+    }
+    .workImages {
+        justify-content: center;
+    }    
+
+
+    
+}
+@media screen and (max-width: 550px) {
+    .navRight {
+        display: none;
+    }
+    .faNav {
+        display: block;
+        width: 10%;
+        margin-left: auto;
+    }
+    #workNav ul {
+        flex-wrap: wrap;
+    }
+    .workLinks {
+        width: 100%;
+    }
+    #longPic {
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+    #tallPic {
+        display: none;
+    }
+    #about {
+        flex-direction: column;
+    }
+    .aboutRight {
+        width: 100%;
+    }
+    .aboutLeft {
+        width: 100%;
+    }
+    #chels {
+        margin: 0;
+    }
+    .modalCloseBtn {
+        text-align: center;
+        color: #fff;
+        font-size: 4rem;
+        line-height: 1rem;
+    }
+    .modalNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 15rem;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 405px) {
+    .navLeft h2 {
+        text-align: center;
+    }
+}
